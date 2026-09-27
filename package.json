@@ -1,0 +1,22 @@
+{
+  "name": "content-address-web",
+  "version": "0.1.0",
+  "description": "内容寻址快照审阅内核：导入/校验、引用图查看、快照比较、回收审阅，基于哈希链事件日志支持重放与恢复",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./web": "./src/web/server.js",
+    "./kernel": "./src/kernel/kernel.js"
+  },
+  "bin": {
+    "content-address-web": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "demo": "node scripts/demo.js"
+  },
+  "license": "MIT"
+}
