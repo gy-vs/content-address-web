@@ -1,0 +1,20 @@
+{
+  "name": "content-address-web",
+  "version": "1.0.0",
+  "description": "Content-addressable snapshot review kernel (import, verification, graph view, snapshot diff, GC review)",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./http": "./src/http/server.js"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "demo": "node scripts/demo.mjs",
+    "start": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
